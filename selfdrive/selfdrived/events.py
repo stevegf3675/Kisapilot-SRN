@@ -256,8 +256,8 @@ def below_steer_speed_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.S
   return Alert(
     f"Steer Unavailable Below {get_display_speed(CP.minSteerSpeed, metric)}",
     "",
-    AlertStatus.userPrompt, AlertSize.small,
-    Priority.LOW, VisualAlert.steerRequired, AudibleAlert.prompt, 0.4)
+    AlertStatus.userPrompt, AlertSize.none,
+    Priority.LOW, VisualAlert.none, AudibleAlert.none, 0.4)
 
 
 def calibration_incomplete_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
@@ -772,7 +772,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
       AlertStatus.normal, AlertSize.small,
       Priority.LOW, VisualAlert.none, AudibleAlert.warning, .5),
   },
-  
+
   EventName.modeChangeDistcurv: {
     ET.WARNING: Alert(
       tr(80),
