@@ -1,3 +1,18 @@
+# Kisapilot-SRN — Development Branch ![Branch](https://img.shields.io/badge/branch-kisapilot--dev-orange)
+
+**Purpose:** Active development branch — where new code is created and tested before promotion to staging.
+
+**Flow Direction:**
+`kisapilot-dev → kisapilot-staging → kisapilot-main`
+
+**Rules:**
+- No branch protection (direct commits allowed)
+- Optional: enable linear history enforcement if desired
+- Safe area for experimentation
+
+See `/docs/BRANCH_RULES.md` for full policy details.
+
+
 # openpilot docs
 
 This is the source for [docs.comma.ai](https://docs.comma.ai).
