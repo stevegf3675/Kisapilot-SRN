@@ -1,3 +1,19 @@
+# Kisapilot-SRN — Staging Branch ![Branch](https://img.shields.io/badge/branch-kisapilot--staging-yellow)
+
+**Purpose:** Burn-in / validation branch — used to test builds before they are promoted to production.
+
+**Flow Direction:**
+`kisapilot-dev → kisapilot-staging → kisapilot-main`
+
+**Rules:**
+- Protected branch
+- No direct pushes
+- PRs required before merge
+- Used for final validation before production
+
+See `/docs/BRANCH_RULES.md` for full policy details.
+
+
 # openpilot docs
 
 This is the source for [docs.comma.ai](https://docs.comma.ai).
